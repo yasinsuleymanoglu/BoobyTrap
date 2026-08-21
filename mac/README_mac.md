@@ -14,9 +14,13 @@ Mac bilgisayarınızın başından kalktığınızda cihazınızı koruyan nihai
 ### 1. Gereksinimler ve Kurulum (Sanal Ortam / Venv)
 Mac'inizde **Python 3** yüklü olmalıdır. Projeyi çalıştırırken bilgisayarınızın ana Python ayarlarını bozmamak ve paket çakışmalarını (Örn: opencv hataları) engellemek için izole bir "Sanal Ortam" kurmanız şiddetle tavsiye edilir.
 
-Terminali açın, projeyi indirdiğiniz dizine (klasöre) gidin ve şu komutları sırasıyla çalıştırın:
+Terminali açın ve şu komutları sırasıyla çalıştırarak kurulumu tamamlayın:
 
-1. `trap` adında yeni bir sanal ortam oluşturun:
+1. Projenin bulunduğu klasörün içine girin (Yolu indirdiğiniz yere göre değiştirin):
+```bash
+cd /yol/BoobyTrap/mac
+```
+2. `trap` adında yeni bir sanal ortam oluşturun:
 ```bash
 python3 -m venv trap
 ```

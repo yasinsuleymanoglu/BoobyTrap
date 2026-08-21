@@ -14,9 +14,13 @@ Windows bilgisayarınızın başından kalktığınızda cihazınızı koruyan n
 ### 1. Gereksinimler ve Kurulum (Sanal Ortam / Venv)
 Bilgisayarınızda **Python 3** yüklü olmalıdır. Projeyi çalıştırırken sisteminizin ana Python ayarlarını bozmamak ve paket çakışmalarını (Örn: opencv hataları) engellemek için izole bir "Sanal Ortam" kurmanız şiddetle tavsiye edilir.
 
-Komut İstemi'ni (CMD) veya PowerShell'i açıp projenin bulunduğu klasöre gidin ve şu komutları sırasıyla çalıştırın:
+Komut İstemi'ni (CMD) veya PowerShell'i açıp şu komutları sırasıyla çalıştırın:
 
-1. `trap` adında yeni bir sanal ortam oluşturun:
+1. Projenin bulunduğu klasörün içine girin (Yolu indirdiğiniz yere göre değiştirin):
+```cmd
+cd \yol\BoobyTrap\windows
+```
+2. `trap` adında yeni bir sanal ortam oluşturun:
 ```cmd
 python -m venv trap
 ```
