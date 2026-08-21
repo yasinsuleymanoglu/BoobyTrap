@@ -28,9 +28,9 @@ python -m venv trap
 ```cmd
 trap\Scripts\activate
 ```
-3. Gerekli kütüphaneleri bu güvenli alana kurun:
+3. Gerekli kütüphaneleri (requirements.txt) bu güvenli alana kurun:
 ```cmd
-pip install opencv-python pynput
+pip install -r ..\requirements.txt
 ```
 *(Not: Sistemi her kullanacağınızda önce `trap\Scripts\activate` komutuyla ortamı aktif ettiğinizden emin olun.)*
 

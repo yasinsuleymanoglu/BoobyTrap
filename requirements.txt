@@ -1,0 +1,3 @@
+opencv-python
+pynput
+pyobjc-framework-CoreBluetooth; sys_platform == 'darwin'

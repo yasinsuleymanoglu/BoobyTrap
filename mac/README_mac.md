@@ -28,9 +28,9 @@ python3 -m venv trap
 ```bash
 source trap/bin/activate
 ```
-3. Gerekli kütüphaneleri bu güvenli alana kurun:
+3. Gerekli kütüphaneleri (requirements.txt) bu güvenli alana kurun:
 ```bash
-pip install opencv-python pynput
+pip install -r ../requirements.txt
 ```
 *(Not: Sistemi her kullanacağınızda önce `source trap/bin/activate` komutuyla ortamı aktif ettiğinizden emin olun.)*
 
@@ -70,11 +70,6 @@ Projenin içinde yer alan **`bluetooth_trap.py`** modülü, tamamen otomatik bir
 - **Terminal Kamuflajı:** Uygulama terminalde çalışırken büyük uyarılar vermek yerine, sıradan bir sistem servisi (`[sys.bluetooth.daemon] pid: 4892`) gibi görünerek kendini gizler.
 - **Otomatik İptal:** Tuzağa kimse düşmezse ve siz masaya geri dönerseniz, Mac telefonunuzun yaklaştığını algılar ve tuzağı siz daha sandalyeye oturmadan otomatik olarak devreden çıkarır.
 
-### Kurulum (Sadece bu modül için):
-Bu modül Apple'ın çekirdek Bluetooth altyapısını kullandığı için ek bir kütüphaneye ihtiyaç duyar:
-```bash
-pip install pyobjc-framework-CoreBluetooth
-```
 Çalıştırmak için UUID kodunuzu kodun içindeki ayarlar kısmına yapıştırın ve çalıştırın:
 ```bash
 python bluetooth_trap.py
