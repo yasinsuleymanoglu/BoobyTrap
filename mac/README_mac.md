@@ -79,11 +79,11 @@ python bluetooth_trap.py
 ---
 
 ### 💡 İpucu: Hızlı Başlatma (Terminal Kısayolu Ekleme)
-Her sabah bilgisayarı açtığınızda uzun uzun dosya yolunu yazmak yerine, terminalinize kalıcı bir kısayol (alias) ekleyebilirsiniz. Böylece sadece **`tuzak`** (veya istediğiniz herhangi bir kelime) yazarak sistemi saniyeler içinde kurabilirsiniz.
+Her sabah bilgisayarı açtığınızda uzun uzun dosya yolunu yazmak veya sanal ortamı (venv) aktif etmekle uğraşmak istemiyorsanız, terminalinize kalıcı bir kısayol (alias) ekleyebilirsiniz.
 
-Bunun için terminalinizde şu komutu kendi indirdiğiniz dosya yoluna göre düzenleyip yapıştırın:
+Bunun için terminalinizde şu komutu kendi indirdiğiniz dosya yoluna göre düzenleyip yapıştırın (Sanal ortamdaki python dosyasının yolunu gösterdiğimize dikkat edin):
 ```bash
-echo "alias tuzak='python /bilgisayarinizdaki/tam/yol/BoobyTrap/mac/bluetooth_trap.py'" >> ~/.zshrc
+echo "alias trap='/bilgisayarinizdaki/tam/yol/BoobyTrap/mac/trap/bin/python /bilgisayarinizdaki/tam/yol/BoobyTrap/mac/bluetooth_trap.py'" >> ~/.zshrc
 source ~/.zshrc
 ```
-*(Artık terminale sadece `tuzak` yazmanız yeterlidir!)*
+*(Artık terminale tıpkı bizim yaptığımız gibi sadece **`trap`** yazmanız yeterlidir! Arka planda tüm sanal ortamı kendisi halledip tuzağı anında kuracaktır.)*

@@ -46,3 +46,17 @@ python trap_windows.py
 - Ekranda şık bir popup 3-2-1 diye sayarak tuzağı kuracaktır. Ardından masadan ayrılabilirsiniz.
 - Geri döndüğünüzde **SADECE SİZ** klavyeden önce `t` sonra `r` tuşlarına hızlıca basarak tuzağı sessizce imha edebilirsiniz. (Bu kısayolu kodun içinden istediğiniz gibi değiştirebilirsiniz).
 - Yanlış tuşa basıldığı veya fare oynatıldığı an tuzak patlar!
+
+---
+
+### 💡 İpucu: Hızlı Başlatma (Masaüstü Kısayolu)
+Sistemi her seferinde komut isteminden çalıştırmak veya sanal ortamı (`venv`) aktif etmekle uğraşmamak için projeyi tek tıkla çalıştıracak bir `.bat` dosyası yapabilirsiniz:
+
+1. Proje klasörünün içine girin, sağ tıklayıp yeni bir metin belgesi oluşturun ve adını **`trap.bat`** yapın (Sonunun `.txt` değil `.bat` olduğundan emin olun).
+2. Dosyanın içine şu 3 satırı kopyalayıp kaydedin:
+```bat
+@echo off
+call trap\Scripts\activate
+python trap_windows.py
+```
+3. Artık bu dosyaya her çift tıkladığınızda arka planda sanal ortam otomatik olarak yüklenir ve tuzak saniyeler içinde devreye girer! İsterseniz bu `trap.bat` dosyasına sağ tıklayıp "Gönder -> Masaüstüne Kısayol Oluştur" diyerek tamamen masaüstünden tek tıkla da kullanabilirsiniz.
