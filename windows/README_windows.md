@@ -11,11 +11,24 @@ Windows bilgisayarınızın başından kalktığınızda cihazınızı koruyan n
 
 ## ⚙️ Kurulum ve İzinler
 
-### 1. Gereksinimler
-Bilgisayarınızda **Python 3** yüklü olmalıdır. Ardından komut satırını (CMD) açın ve gerekli kütüphaneleri kurun:
+### 1. Gereksinimler ve Kurulum (Sanal Ortam / Venv)
+Bilgisayarınızda **Python 3** yüklü olmalıdır. Projeyi çalıştırırken sisteminizin ana Python ayarlarını bozmamak ve paket çakışmalarını (Örn: opencv hataları) engellemek için izole bir "Sanal Ortam" kurmanız şiddetle tavsiye edilir.
+
+Komut İstemi'ni (CMD) veya PowerShell'i açıp projenin bulunduğu klasöre gidin ve şu komutları sırasıyla çalıştırın:
+
+1. `trap` adında yeni bir sanal ortam oluşturun:
+```cmd
+python -m venv trap
+```
+2. Ortamı aktif edin:
+```cmd
+trap\Scripts\activate
+```
+3. Gerekli kütüphaneleri bu güvenli alana kurun:
 ```cmd
 pip install opencv-python pynput
 ```
+*(Not: Sistemi her kullanacağınızda önce `trap\Scripts\activate` komutuyla ortamı aktif ettiğinizden emin olun.)*
 
 ### 2. İzinler
 - Windows'ta `pynput` kütüphanesi tuşları dinlemek için çoğunlukla ek bir izne ihtiyaç duymaz. 

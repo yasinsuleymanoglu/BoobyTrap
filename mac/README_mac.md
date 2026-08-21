@@ -11,11 +11,24 @@ Mac bilgisayarınızın başından kalktığınızda cihazınızı koruyan nihai
 
 ## ⚙️ Kurulum ve İzinler
 
-### 1. Gereksinimler
-Mac'inizde **Python 3** yüklü olmalıdır. Ardından terminali açın ve gerekli kütüphaneleri kurun:
+### 1. Gereksinimler ve Kurulum (Sanal Ortam / Venv)
+Mac'inizde **Python 3** yüklü olmalıdır. Projeyi çalıştırırken bilgisayarınızın ana Python ayarlarını bozmamak ve paket çakışmalarını (Örn: opencv hataları) engellemek için izole bir "Sanal Ortam" kurmanız şiddetle tavsiye edilir.
+
+Terminali açın, projeyi indirdiğiniz dizine (klasöre) gidin ve şu komutları sırasıyla çalıştırın:
+
+1. `trap` adında yeni bir sanal ortam oluşturun:
+```bash
+python3 -m venv trap
+```
+2. Ortamı aktif edin:
+```bash
+source trap/bin/activate
+```
+3. Gerekli kütüphaneleri bu güvenli alana kurun:
 ```bash
 pip install opencv-python pynput
 ```
+*(Not: Sistemi her kullanacağınızda önce `source trap/bin/activate` komutuyla ortamı aktif ettiğinizden emin olun.)*
 
 ### 2. MacOS İzinleri (ÇOK ÖNEMLİ)
 Bu uygulamanın klavyeyi dinleyebilmesi ve kamerayı açabilmesi için Mac'inizin güvenlik duvarına izin vermeniz gerekir.
